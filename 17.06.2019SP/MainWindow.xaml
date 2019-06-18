@@ -1,0 +1,21 @@
+﻿<Window x:Class="_17._06._2019SP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_17._06._2019SP"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="330" Width="770">
+    <Grid Background="DarkRed">
+        <Image Source="https://cdn.newsapi.com.au/image/v1/fdd9b7a9ede5ed224e7eb4498dd4394a" Width="auto" Height="auto"/>
+        <StackPanel>
+            <TextBlock Name="percentageTextBlock" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="0%" VerticalAlignment="Center" FontSize="48" Height="67" Width="101" FontWeight="Bold" Foreground="White"/>
+            <TextBlock FontSize="30" Name="resultTextBlock" TextAlignment="Center" Text="" VerticalAlignment="Center"  Width="742" HorizontalAlignment="Center"/>
+            <Grid>
+                <TextBox FontSize="30"  Name="firstNameTextBox" Height="50"  TextWrapping="Wrap"  VerticalAlignment="Top" Margin="50,0,419,0"/>
+                <TextBox FontSize="30"   Name="secondNameTextBox"  Height="50"  TextWrapping="Wrap"  VerticalAlignment="Top" Margin="415,0,54,0"/>
+            </Grid>
+            <Button Click="CheckingButtonClick" x:Name="CheckingButton" Content="Check" HorizontalAlignment="Center" VerticalAlignment="Center"   FontSize="40" Height="70" Width="232" FontWeight="Bold" Margin="280,20"/>
+        </StackPanel>
+    </Grid>
+</Window>
